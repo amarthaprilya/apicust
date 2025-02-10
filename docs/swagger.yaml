@@ -14,7 +14,7 @@ definitions:
       updated_at:
         type: string
     type: object
-host: https://customer-263afc16a78b.herokuapp.com/
+host: customer-263afc16a78b.herokuapp.com/
 info:
   contact: {}
   description: Sweager service API in Go using Gin framework

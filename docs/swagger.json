@@ -5,7 +5,7 @@
         "title": "Sweager Service API",
         "contact": {}
     },
-    "host": "https://customer-263afc16a78b.herokuapp.com/",
+    "host": "customer-263afc16a78b.herokuapp.com/",
     "paths": {
         "/customers": {
             "get": {

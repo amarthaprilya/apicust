@@ -19,7 +19,7 @@ import (
 
 // @title Sweager Service API
 // @description Sweager service API in Go using Gin framework
-// @host https://customer-263afc16a78b.herokuapp.com/
+// @host customer-263afc16a78b.herokuapp.com/
 func main() {
 	database := db.ConnectDB()
 	repo := &repository.CustomerRepository{DB: database}
