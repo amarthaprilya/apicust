@@ -6,6 +6,8 @@ import (
 	"customer/handler"
 	"customer/repository"
 	"customer/service"
+	"log"
+	"os"
 
 	_ "customer/docs"
 
@@ -38,5 +40,15 @@ func main() {
 		AllowMethods:    []string{"POST, OPTIONS, GET, PUT, DELETE"},
 	}))
 
-	r.Run(":8080")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // Default port
+	}
+
+	// Jalankan server pada port yang sudah ditentukan
+	err := r.Run(":" + port)
+	if err != nil {
+		log.Fatal("Failed to start server:", err)
+	}
+
 }
